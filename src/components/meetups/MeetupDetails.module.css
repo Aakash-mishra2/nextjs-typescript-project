@@ -1,0 +1,8 @@
+/* module.css allows you to scope css rules to a react component.*/
+.detail{
+    text-align: center;
+}
+.detail img{
+    width: 100%;
+
+}
