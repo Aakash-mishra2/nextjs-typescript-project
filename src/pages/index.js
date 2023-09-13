@@ -1,10 +1,19 @@
 import MeetupList from "@/components/meetups/MeetupList";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { MongoClient } from "mongodb";
-
+import Head from "next/head";
 
 function HomePage(props){
-    return <MeetupList meetups={props.meetups} />
+    return( 
+    <Fragment>
+    <Head>
+        <title> Meetups Calender </title>
+        <meta name="description" content="Plan together and relive your meetup moments with friends." />
+    </Head>
+    <MeetupList meetups={props.meetups}/>
+
+    </Fragment>
+    )
 }
 
 // export async function getServerSideProps(context){
