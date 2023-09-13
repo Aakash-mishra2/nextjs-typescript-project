@@ -36,6 +36,7 @@ export async function getStaticProps(){
                 address: meetup.address,
                 image: meetup.image,
                 id: meetup._id.toString(),
+                description: meetup.description,
             }))
         },
         revalidate: 2
