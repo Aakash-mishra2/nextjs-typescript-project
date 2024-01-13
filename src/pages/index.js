@@ -4,6 +4,7 @@ import { MongoClient } from "mongodb";
 import Head from "next/head";
 
 function HomePage(props){
+    console.log('Homepage rendered', props);
     return( 
     <Fragment>
     <Head>
@@ -29,6 +30,7 @@ function HomePage(props){
 // }
 
 export async function getStaticProps(){
+    console.log('Homepage getstatic props rendered');
     // fetch data from an API
     const client = await MongoClient.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.kfazawl.mongodb.net/MeetUps?retryWrites=true&w=majority`);
     const db = client.db();
