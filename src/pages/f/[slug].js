@@ -26,7 +26,6 @@ function PostPage ({ post }){
                 <title>{post} - My Blogs</title>
             </Head>
         </>
-    )
+    );
 }
-
 export default PostPage;

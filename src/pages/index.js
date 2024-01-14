@@ -5,7 +5,7 @@ import Head from "next/head";
 
 function HomePage(props){
     console.log('Homepage rendered', props);
-    return( 
+    return  ( 
     <Fragment>
     <Head>
         <title> Meetups Calender </title>
